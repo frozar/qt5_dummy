@@ -18,7 +18,7 @@ set(CMAKE_AUTOUIC ON) # UI files
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-project(notepad)
+project(Notepad)
 
 set(SOURCE_FILES
     main.cpp
