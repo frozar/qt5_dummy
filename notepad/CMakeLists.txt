@@ -8,6 +8,9 @@
 # An official example given some hint to build with Qt4 at:
 # https://wiki.qt.io/Using_CMake_build_system
 
+# Additionnal link:
+# http://www.kdab.com/using-cmake-with-qt-5/
+
 cmake_minimum_required(VERSION 2.8.11)
 
 # init_qt: Let's do the CMake job for us
