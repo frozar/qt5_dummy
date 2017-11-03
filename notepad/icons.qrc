@@ -1,0 +1,16 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+    <file>icons/new_file.png</file>
+    <file>icons/open_folder_yellow.png</file>
+    <file>icons/save.png</file>
+    <file>icons/filesaveas.png</file>
+    <file>icons/printer.png</file>
+    <file>icons/fonts.png</file>
+    <file>icons/copy.png</file>
+    <file>icons/cut.png</file>
+    <file>icons/paste.png</file>
+    <file>icons/old_edit_undo.png</file>
+    <file>icons/old_edit_redo.png</file>
+    <file>icons/application_exit.png</file>
+</qresource>
+</RCC>

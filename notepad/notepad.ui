@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>588</width>
     <height>300</height>
    </rect>
   </property>
@@ -17,9 +17,9 @@
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>20</x>
       <y>20</y>
-      <width>256</width>
+      <width>541</width>
       <height>192</height>
      </rect>
     </property>
@@ -30,7 +30,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>588</width>
      <height>20</height>
     </rect>
    </property>
@@ -44,6 +44,7 @@
     <addaction name="actionSave_as"/>
     <addaction name="actionPrint"/>
     <addaction name="actionFont"/>
+    <addaction name="actionExit"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
@@ -66,72 +67,127 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionSave_as"/>
+   <addaction name="actionPrint"/>
+   <addaction name="separator"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionCut"/>
+   <addaction name="actionPaste"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="actionFont"/>
+   <addaction name="separator"/>
+   <addaction name="actionExit"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionNew">
    <property name="icon">
-    <iconset>
-     <normaloff>icons/add_file-256.png</normaloff>
-     <normalon>icons/add_file-256.png</normalon>
-     <disabledoff>icons/add_file-256.png</disabledoff>
-     <disabledon>icons/add_file-256.png</disabledon>
-     <activeoff>icons/add_file-256.png</activeoff>
-     <activeon>icons/add_file-256.png</activeon>
-     <selectedoff>icons/add_file-256.png</selectedoff>
-     <selectedon>icons/add_file-256.png</selectedon>icons/add_file-256.png</iconset>
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/new_file.png</normaloff>:/icons/new_file.png</iconset>
    </property>
    <property name="text">
     <string>New</string>
    </property>
   </action>
   <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/open_folder_yellow.png</normaloff>:/icons/open_folder_yellow.png</iconset>
+   </property>
    <property name="text">
     <string>Open</string>
    </property>
   </action>
   <action name="actionSave">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/save.png</normaloff>:/icons/save.png</iconset>
+   </property>
    <property name="text">
     <string>Save</string>
    </property>
   </action>
   <action name="actionSave_as">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/filesaveas.png</normaloff>:/icons/filesaveas.png</iconset>
+   </property>
    <property name="text">
     <string>Save as</string>
    </property>
   </action>
   <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/printer.png</normaloff>:/icons/printer.png</iconset>
+   </property>
    <property name="text">
     <string>Print</string>
    </property>
   </action>
   <action name="actionFont">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/fonts.png</normaloff>:/icons/fonts.png</iconset>
+   </property>
    <property name="text">
     <string>Font</string>
    </property>
   </action>
   <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/copy.png</normaloff>:/icons/copy.png</iconset>
+   </property>
    <property name="text">
     <string>Copy</string>
    </property>
   </action>
   <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/paste.png</normaloff>:/icons/paste.png</iconset>
+   </property>
    <property name="text">
     <string>Paste</string>
    </property>
   </action>
   <action name="actionCut">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/cut.png</normaloff>:/icons/cut.png</iconset>
+   </property>
    <property name="text">
     <string>Cut</string>
    </property>
   </action>
   <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/old_edit_undo.png</normaloff>:/icons/old_edit_undo.png</iconset>
+   </property>
    <property name="text">
     <string>Undo</string>
    </property>
   </action>
   <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/old_edit_redo.png</normaloff>:/icons/old_edit_redo.png</iconset>
+   </property>
    <property name="text">
     <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/application_exit.png</normaloff>:/icons/application_exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
    </property>
   </action>
  </widget>
@@ -139,6 +195,8 @@
  <tabstops>
   <tabstop>textEdit</tabstop>
  </tabstops>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

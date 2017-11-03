@@ -119,3 +119,8 @@ void Notepad::on_actionRedo_triggered()
 {
     ui->textEdit->redo();
 }
+
+void Notepad::on_actionExit_triggered()
+{
+    QApplication::quit();
+}

@@ -29,5 +29,5 @@ HEADERS  += notepad.h
 
 FORMS    += notepad.ui
 
-#RESOURCES += \
-#    notepad.qrc
+RESOURCES += \
+    icons.qrc
